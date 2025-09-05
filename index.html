@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>Graycrafthive.com - Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2540',      // Deep Navy Blue
+                        accent: '#31708E',       // Muted Teal
+                        backgroundSoft: '#D9CDBF', // Warm Sandy Beige
+                        contentBg: '#FAFAF9',      // Crisp Off-white
+                        textPrimary: '#2C2C2C',    // Dark Charcoal text
+                        textSecondary: '#555555',  // Secondary text grey
+                    },
+                    borderRadius: {
+                        lgcustom: '16px',
+                        roundfullcustom: '35px',
+                    },
+                    boxShadow: {
+                        card: '0 8px 24px rgba(10, 37, 64, 0.15)',
+                        soft: '0 4px 20px rgba(10, 37, 64, 0.1)',
+                    },
+                    animation: {
+                        'fade-slide-up': 'fadeSlideUp 0.7s ease forwards',
+                    },
+                    keyframes: {
+                        fadeSlideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(25px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer utilities {
+            .rounded-lgcustom {
+                border-radius: 16px;
+            }
+
+            .rounded-roundfullcustom {
+                border-radius: 35px;
+            }
+
+            .shadow-card {
+                box-shadow: 0 8px 24px rgba(10, 37, 64, 0.15);
+            }
+
+            .shadow-soft {
+                box-shadow: 0 4px 20px rgba(10, 37, 64, 0.1);
+            }
+
+            @keyframes fadeSlideUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(25px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-fade-slide-up {
+                animation: fadeSlideUp 0.7s ease forwards;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-backgroundSoft text-textPrimary font-serif">
+
+    <!-- Navigation -->
+
+    <nav class="bg-contentBg p-4 flex justify-between items-center shadow-md">
+        <!-- Logo or Brand -->
+        <a href="#" class="text-primary font-extrabold text-2xl tracking-tight">Graycraft Hive</a>
+
+        <!-- Navigation links example -->
+        <ul class="hidden md:flex space-x-8 text-primary font-semibold">
+            <li><a href="#services" class="hover:text-accent transition">Services</a></li>
+            <li><a href="#about" class="hover:text-accent transition">About</a></li>
+            <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+        </ul>
+
+        <!-- Phone Number on right -->
+        <div class="hidden md:block">
+            <a href="tel:+918887918349" class="text-primary font-semibold underline hover:text-accent transition">
+                +91 88879 18349
+            </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <header class="relative bg-contentBg shadow-soft py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+            <div class="w-full md:w-1/2 animate-fade-slide-up text-center md:text-left">
+                <h1 class="text-5xl font-extrabold mb-6 leading-tight text-primary">
+                    Elevate Your Brand with Expert Digital Marketing
+                </h1>
+                <p class="text-xl font-light mb-10 text-textSecondary max-w-lg mx-auto md:mx-0">
+                    Strategic campaigns tailored to grow your business and maximize ROI
+                </p>
+                <button
+                    class="bg-accent text-contentBg hover:bg-primary transition rounded-roundfullcustom px-16 py-5 font-semibold text-lg shadow-card hover:text-white">
+                    Get a Free Consultation
+                </button>
+            </div>
+            <div class="w-full md:w-1/2 animate-fade-slide-up">
+                <img src="./undraw_marketing.svg" alt="Marketing Strategy Illustration" loading="lazy"
+                    class="w-full h-auto rounded-lgcustom shadow-card select-none" />
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-contentBg">
+        <div class="max-w-7xl mx-auto animate-fade-slide-up">
+            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center">About Us</h2>
+            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center">
+                Graycrafthive.com is a premium digital marketing agency dedicated to elevating brands through strategic,
+                data-driven campaigns tailored to deliver unmatched ROI and growth.
+            </p>
+            <div class="flex justify-center">
+                <img src="./ritesh-singh.png" alt="Owner of GreycarftHive.com" loading="lazy"
+                    class="w-full max-w-4xl rounded-lgcustom shadow-card select-none" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-6 bg-contentBg">
+        <div class="max-w-7xl mx-auto animate-fade-slide-up">
+            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center">Our Services</h2>
+            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center">
+                Comprehensive digital marketing solutions designed for your success
+            </p>
+            <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3">
+                <div
+                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933193.png" alt="SEO icon"
+                        class="w-14 h-14 object-contain" loading="lazy" />
+                    <h3 class="text-primary font-semibold text-3xl">SEO Optimization</h3>
+                    <p class="text-textSecondary text-base leading-relaxed flex-grow">
+                        Improve your search rankings with proven strategies that drive organic traffic and increase
+                        visibility.
+                    </p>
+                </div>
+                <div
+                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2858/2858700.png" alt="PPC icon"
+                        class="w-14 h-14 object-contain" loading="lazy" />
+                    <h3 class="text-primary font-semibold text-3xl">Pay-Per-Click Campaigns</h3>
+                    <p class="text-textSecondary text-base leading-relaxed flex-grow">
+                        Maximize ad spend with targeted PPC campaigns that convert prospects into customers.
+                    </p>
+                </div>
+                <div
+                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3595/3595457.png" alt="Social Media icon"
+                        class="w-14 h-14 object-contain" loading="lazy" />
+                    <h3 class="text-primary font-semibold text-3xl">Social Media Marketing</h3>
+                    <p class="text-textSecondary text-base leading-relaxed flex-grow">
+                        Engage your audience and grow your brand on platforms like Instagram, Facebook, and LinkedIn.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6 bg-backgroundSoft text-primary">
+        <div class="max-w-7xl mx-auto text-center animate-fade-slide-up">
+            <h2 class="text-4xl font-extrabold mb-12">Pricing Plans</h2>
+            <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3">
+                <div
+                    class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Starter</h3>
+                    <p class="text-textSecondary mb-6">
+                        Basic digital marketing services to get you started.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">$499<span class="text-base font-normal">/ month</span></div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>SEO Optimization</li>
+                        <li>Basic PPC Campaigns</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                    <button
+                        class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white">
+                        Choose Plan
+                    </button>
+                </div>
+                <div
+                    class="bg-contentBg rounded-lgcustom shadow-card p-8 border-4 border-accent hover:-translate-y-2 transition-transform cursor-pointer">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Professional</h3>
+                    <p class="text-textSecondary mb-6">
+                        Advanced marketing solutions for business growth.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">$1299<span class="text-base font-normal">/ month</span></div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>SEO Optimization</li>
+                        <li>Full PPC Campaign Management</li>
+                        <li>Social Media Marketing</li>
+                        <li>Content Creation & Strategy</li>
+                    </ul>
+                    <button
+                        class="bg-primary text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-accent transition shadow-card hover:text-white">
+                        Choose Plan
+                    </button>
+                </div>
+                <div
+                    class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Enterprise</h3>
+                    <p class="text-textSecondary mb-6">
+                        Custom full-service tailored for your enterprise.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">Contact Us</div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>Dedicated Account Manager</li>
+                        <li>Customized Strategies</li>
+                        <li>24/7 Support & Reporting</li>
+                    </ul>
+                    <button
+                        class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-6 bg-contentBg text-primary">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-12 text-center animate-fade-slide-up">
+                What Our Clients Say
+            </h2>
+            <div class="flex flex-col lg:flex-row gap-16 items-center max-w-6xl mx-auto animate-fade-slide-up">
+                <img src="./undraw_testimonials.svg" alt="Testimonial Illustration" loading="lazy"
+                    class="max-w-md rounded-lgcustom shadow-card flex-1 select-none" />
+                <div class="flex flex-col gap-12 flex-1">
+                    <blockquote
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
+                        <p class="mb-8 relative text-lg leading-relaxed">
+                            Partnering with this agency transformed our online presence. The
+                            team is professional and results-driven.
+                        </p>
+                        <footer class="relative font-semibold text-primary text-lg">
+                            - Sarah M., CEO of BrightTech
+                        </footer>
+                    </blockquote>
+                    <blockquote
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
+                        <p class="mb-8 relative text-lg leading-relaxed">
+                            Their marketing expertise helped our sales soar within months.
+                            Highly recommend their services.
+                        </p>
+                        <footer class="relative font-semibold text-primary text-lg">
+                            - James L., Founder of Urban Eats
+                        </footer>
+                    </blockquote>
+                    <blockquote
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
+                        <p class="mb-8 relative text-lg leading-relaxed">
+                            Excellent communication and clear strategies made our campaigns
+                            effective and hassle-free.
+                        </p>
+                        <footer class="relative font-semibold text-primary text-lg">
+                            - Emily R., Marketing Director, GreenLeaf
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-backgroundSoft text-primary">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-10">Contact Us</h2>
+            <form action="https://formspree.io/f/mvgbvwjp" method="POST"
+                class="bg-contentBg p-10 rounded-lgcustom shadow-card max-w-lg mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block mb-2 font-semibold">Name</label>
+                    <input type="text" name="name" id="name" required
+                        class="w-full border border-gray-300 rounded-lgcustom px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 font-semibold">Email</label>
+                    <input type="email" name="_replyto" id="email" required
+                        class="w-full border border-gray-300 rounded-lgcustom px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent" />
+                </div>
+                <div>
+                    <label for="message" class="block mb-2 font-semibold">Message</label>
+                    <textarea name="message" id="message" rows="5" required
+                        class="w-full border border-gray-300 rounded-lgcustom px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white w-full">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+
+    <section class="bg-primary py-20 px-6 text-center text-contentBg">
+        <div class="max-w-7xl mx-auto animate-fade-slide-up"></div>
+        <h2 class="text-3xl font-extrabold mb-6">Ready to Grow Your Business?</h2>
+        <p class="text-accent max-w-3xl mx-auto mb-12 font-light text-lg">
+            Contact us today for a complimentary strategy session and start seeing
+            real results.
+        </p>
+        <button id="openModal"
+            class="border-2 border-contentBg rounded-roundfullcustom px-16 py-5 font-semibold text-lg hover:bg-contentBg hover:text-primary transition transform hover:scale-105">
+            Schedule a Call
+        </button>
+    </section>
+
+    <!-- Modal Contact Form -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+        <div class="bg-contentBg rounded-lg p-8 max-w-md w-full relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-primary font-bold text-xl"
+                aria-label="Close modal">
+                &times;
+            </button>
+            <h2 class="text-3xl font-extrabold mb-6">Schedule a Call</h2>
+            <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required />
+                <input type="email" name="_replyto" placeholder="Your Email"
+                    class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required />
+                <textarea name="message" rows="4" placeholder="Preferred time or message"
+                    class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                <button type="submit"
+                    class="w-full bg-accent text-contentBg rounded-full px-6 py-3 font-semibold hover:bg-primary transition shadow-md">
+                    Send Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const openModalBtn = document.getElementById('openModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modal = document.getElementById('modal');
+
+        openModalBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Optional: close modal with ESC key
+        window.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
