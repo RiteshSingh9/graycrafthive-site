@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
-    <title>Graycrafthive.com - Digital Marketing Agency</title>
+    <title>riteshsingh.in - Digital Marketing Agency</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -41,6 +41,10 @@
         }
     </script>
     <style>
+        * {
+            overflow-x: hidden !important;
+        }
+
         @layer utilities {
             .rounded-lgcustom {
                 border-radius: 16px;
@@ -75,6 +79,9 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-backgroundSoft text-textPrimary font-serif">
@@ -83,7 +90,7 @@
 
     <nav class="bg-contentBg p-4 flex justify-between items-center shadow-md">
         <!-- Logo or Brand -->
-        <a href="#" class="text-primary font-extrabold text-2xl tracking-tight">Graycraft Hive</a>
+        <a href="#" class="text-primary font-extrabold text-2xl tracking-tight">Ritesh Singh</a>
 
         <!-- Navigation links example -->
         <ul class="hidden md:flex space-x-8 text-primary font-semibold">
@@ -111,7 +118,7 @@
 
 
     <!-- Hero Section -->
-    <header class="relative bg-contentBg shadow-soft py-20 px-6">
+    <header class="relative bg-contentBg shadow-soft py-20 px-6" data-aos="fade-right">
         <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
             <div class="w-full md:w-1/2 animate-fade-slide-up text-center md:text-left">
                 <h1 class="text-5xl font-extrabold mb-6 leading-tight text-primary">
@@ -135,14 +142,15 @@
     <!-- About Section -->
     <section id="about" class="py-20 px-6 bg-contentBg">
         <div class="max-w-7xl mx-auto animate-fade-slide-up">
-            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center">About Us</h2>
-            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center">
-                Graycrafthive.com is a premium digital marketing agency dedicated to elevating brands through strategic,
+            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center" data-aos="fade-left">About Us</h2>
+            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center" data-aos="fade-right">
+                riteshsingh.in is a premium digital marketing agency dedicated to elevating brands through strategic,
                 data-driven campaigns tailored to deliver unmatched ROI and growth.
             </p>
-            <div class="flex justify-center">
-                <img src="./ritesh-singh.png" alt="Owner of GreycarftHive.com" loading="lazy"
-                    class="w-full max-w-4xl rounded-lgcustom shadow-card select-none" />
+            <div class="flex justify-center" data-aos="fade-down-left">
+                <img src="./ritesh-singh-compressed.webp" loading="lazy" decoding="async"
+                    alt="Owner of GreycarftHive.com" class="w-full max-w-4xl rounded-lgcustom shadow-card select-none"
+                    style="max-width: 600px" />
             </div>
         </div>
     </section>
@@ -150,13 +158,13 @@
     <!-- Services Section -->
     <section class="py-20 px-6 bg-contentBg">
         <div class="max-w-7xl mx-auto animate-fade-slide-up">
-            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center">Our Services</h2>
-            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center">
+            <h2 class="text-4xl font-extrabold text-primary mb-10 text-center" data-aos="fade-right">Our Services</h2>
+            <p class="text-textSecondary max-w-4xl mx-auto mb-16 text-lg font-light text-center" data-aos="fade-left">
                 Comprehensive digital marketing solutions designed for your success
             </p>
-            <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3">
-                <div
-                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+            <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3 overflow-y-hidden">
+                <div class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5"
+                    data-aos="fade-up" data-aos-delay="100">
                     <img src="https://cdn-icons-png.flaticon.com/512/2933/2933193.png" alt="SEO icon"
                         class="w-14 h-14 object-contain" loading="lazy" />
                     <h3 class="text-primary font-semibold text-3xl">SEO Optimization</h3>
@@ -165,8 +173,8 @@
                         visibility.
                     </p>
                 </div>
-                <div
-                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+                <div class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5"
+                    data-aos="fade-down" data-aos-delay="100">
                     <img src="https://cdn-icons-png.flaticon.com/512/2858/2858700.png" alt="PPC icon"
                         class="w-14 h-14 object-contain" loading="lazy" />
                     <h3 class="text-primary font-semibold text-3xl">Pay-Per-Click Campaigns</h3>
@@ -174,8 +182,8 @@
                         Maximize ad spend with targeted PPC campaigns that convert prospects into customers.
                     </p>
                 </div>
-                <div
-                    class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5">
+                <div class="bg-backgroundSoft rounded-lgcustom shadow-card p-12 hover:-translate-y-2 transition-transform cursor-pointer text-left flex flex-col items-start space-y-5"
+                    data-aos="fade-up" data-aos-delay="100">
                     <img src="https://cdn-icons-png.flaticon.com/512/3595/3595457.png" alt="Social Media icon"
                         class="w-14 h-14 object-contain" loading="lazy" />
                     <h3 class="text-primary font-semibold text-3xl">Social Media Marketing</h3>
@@ -188,47 +196,52 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20 px-6 bg-backgroundSoft text-primary">
+    <section id="pricing-som" class="py-20 px-6 bg-backgroundSoft text-primary">
         <div class="max-w-7xl mx-auto text-center animate-fade-slide-up">
-            <h2 class="text-4xl font-extrabold mb-12">Pricing Plans</h2>
+            <h2 class="text-4xl font-extrabold mb-12" data-aos="fade-down-left">Pricing Plans</h2>
+            <h2 class="text-2xl font-extrabold mb-12" data-aos="fade-up-right">Digital Marketing</h2>
             <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3">
-                <div
-                    class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer">
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="fade-up">
                     <h3 class="text-primary font-semibold text-2xl mb-4">Starter</h3>
                     <p class="text-textSecondary mb-6">
-                        Basic digital marketing services to get you started.
+                        Basic digital marketing services to get you started. Best for small businesses.
                     </p>
-                    <div class="text-3xl font-bold mb-4">$499<span class="text-base font-normal">/ month</span></div>
+                    <div class="text-3xl font-bold mb-4">₹5,999<span class="text-base font-normal">/ month</span></div>
                     <ul class="mb-6 text-left text-textSecondary space-y-2">
-                        <li>SEO Optimization</li>
                         <li>Basic PPC Campaigns</li>
-                        <li>Email Marketing</li>
+                        <li>Facebook Marketing</li>
+                        <li>Instagram Marketing</li>
+                        <li>Monthly Reporting</li>
                     </ul>
                     <button
                         class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white">
                         Choose Plan
                     </button>
                 </div>
-                <div
-                    class="bg-contentBg rounded-lgcustom shadow-card p-8 border-4 border-accent hover:-translate-y-2 transition-transform cursor-pointer">
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 border-4 border-accent hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="fade-down">
                     <h3 class="text-primary font-semibold text-2xl mb-4">Professional</h3>
                     <p class="text-textSecondary mb-6">
-                        Advanced marketing solutions for business growth.
+                        Advanced marketing solutions for business growth. Best for medium-sized businesses.
                     </p>
-                    <div class="text-3xl font-bold mb-4">$1299<span class="text-base font-normal">/ month</span></div>
+                    <div class="text-3xl font-bold mb-4">₹9,999<span class="text-base font-normal">/ month</span></div>
                     <ul class="mb-6 text-left text-textSecondary space-y-2">
                         <li>SEO Optimization</li>
                         <li>Full PPC Campaign Management</li>
                         <li>Social Media Marketing</li>
-                        <li>Content Creation & Strategy</li>
+                        <li>Meta Marketing</li>
+                        <li>Whatsapp Optimization</li>
+                        <li>Google Maps Optimization</li>
+                        <li>Weekly Reporting</li>
                     </ul>
                     <button
                         class="bg-primary text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-accent transition shadow-card hover:text-white">
                         Choose Plan
                     </button>
                 </div>
-                <div
-                    class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer">
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="fade-up">
                     <h3 class="text-primary font-semibold text-2xl mb-4">Enterprise</h3>
                     <p class="text-textSecondary mb-6">
                         Custom full-service tailored for your enterprise.
@@ -247,6 +260,93 @@
             </div>
         </div>
     </section>
+    <section style="width: 100%; height: 100px; background-color: #fafafa;"></section>
+    <section id="pricing-web" class="py-20 px-6 bg-backgroundSoft text-primary">
+        <div class="max-w-7xl mx-auto text-center animate-fade-slide-up">
+            <h2 class="text-2xl font-extrabold mb-12">Web Development Plans</h2>
+            <div class="grid gap-14 max-w-5xl mx-auto sm:grid-cols-1 md:grid-cols-3">
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="fade-left">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Basic</h3>
+                    <p class="text-textSecondary mb-6">
+                        Basic website services to get you started. Best for small businesses.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">₹6,999<span class="text-base font-normal">/ month</span></div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>Custom Desgin</li>
+                        <li>5 Pages static website</li>
+                        <li>Contact Form Integration</li>
+                        <li>Full Responsive Design</li>
+                        <li>Social Media Integration</li>
+                        <li>SSL certificate Integration</li>
+                        <li>3 Months Free Basic Maintenance</li>
+                    </ul>
+                    <button
+                        class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white">
+                        Choose Plan
+                    </button>
+                </div>
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 border-4 border-accent hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Standard</h3>
+                    <p class="text-textSecondary mb-6">
+                        Advanced web solutions. Best for medium-sized businesses & blogs.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">₹11,999<span class="text-base font-normal">/ month</span></div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>Full Custom Design</li>
+                        <li>Dynamic website</li>
+                        <li>SEO Optimization</li>
+                        <li>Full Responsive Design</li>
+                        <li>Admin Panel</li>
+                        <li>Social Media Integration</li>
+                        <li>Contact Form Integration</li>
+                        <li>Google Maps Integration</li>
+                        <li>Newsletter Signup Integration</li>
+                        <li>Newsletter Signup Integration</li>
+                        <li>SSL certificate Integration</li>
+                        <li>1 Year Free Domain & Hosting</li>
+                        <li>6 Months Free Basic Maintenance</li>
+                        <li>Google Analytics Integration</li>
+                        <li></li>
+                    </ul>
+                    <button
+                        class="bg-primary text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-accent transition shadow-card hover:text-white">
+                        Choose Plan
+                    </button>
+                </div>
+                <div class="bg-contentBg rounded-lgcustom shadow-card p-8 hover:-translate-y-2 transition-transform cursor-pointer"
+                    data-aos="fade-left">
+                    <h3 class="text-primary font-semibold text-2xl mb-4">Premium</h3>
+                    <p class="text-textSecondary mb-6">
+                        Custom Dynamic Website. Best for E-commerce.
+                    </p>
+                    <div class="text-3xl font-bold mb-4">Contact Us</div>
+                    <ul class="mb-6 text-left text-textSecondary space-y-2">
+                        <li>Upto 30 products</li>
+                        <li>Full Custom Design</li>
+                        <li>Dynamic website</li>
+                        <li>SEO Optimization</li>
+                        <li>Admin Panel</li>
+                        <li>Full Responsive Design</li>
+                        <li>Social Media Integration</li>
+                        <li>Contact Form Integration</li>
+                        <li>Google Maps Integration</li>
+                        <li>Newsletter Signup Integration</li>
+                        <li>Newsletter Signup Integration</li>
+                        <li>SSL certificate Integration</li>
+                        <li>1 Year Free Domain & Hosting</li>
+                        <li>6 Months Free Basic Maintenance</li>
+                        <li>Google Analytics Integration</li>
+                    </ul>
+                    <button
+                        class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
     <section class="py-20 px-6 bg-contentBg text-primary">
@@ -256,10 +356,11 @@
             </h2>
             <div class="flex flex-col lg:flex-row gap-16 items-center max-w-6xl mx-auto animate-fade-slide-up">
                 <img src="./undraw_testimonials.svg" alt="Testimonial Illustration" loading="lazy"
-                    class="max-w-md rounded-lgcustom shadow-card flex-1 select-none" />
+                    class="max-w-md rounded-lgcustom shadow-card flex-1 select-none" data-aos="zoom-in-up" />
                 <div class="flex flex-col gap-12 flex-1">
                     <blockquote
-                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left"
+                        data-aos="fade-down-left">
                         <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
                         <p class="mb-8 relative text-lg leading-relaxed">
                             Partnering with this agency transformed our online presence. The
@@ -270,7 +371,8 @@
                         </footer>
                     </blockquote>
                     <blockquote
-                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left"
+                        data-aos="fade-up-right">
                         <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
                         <p class="mb-8 relative text-lg leading-relaxed">
                             Their marketing expertise helped our sales soar within months.
@@ -281,14 +383,16 @@
                         </footer>
                     </blockquote>
                     <blockquote
-                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left">
+                        class="bg-contentBg rounded-lgcustom shadow-card p-10 italic relative text-textPrimary text-left"
+                        data-aos="fade-down-left">
                         <span class="absolute top-6 left-6 text-accent text-8xl opacity-20 select-none">“</span>
                         <p class="mb-8 relative text-lg leading-relaxed">
                             Excellent communication and clear strategies made our campaigns
                             effective and hassle-free.
                         </p>
                         <footer class="relative font-semibold text-primary text-lg">
-                            - Emily R., Marketing Director, GreenLeaf
+                            <!-- - Khushboo Chaubey., Managing Director, Nutridonltd.com -->
+                            Kristina S., Marketing Head of FashionFiesta
                         </footer>
                     </blockquote>
                 </div>
@@ -296,7 +400,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 bg-backgroundSoft text-primary">
+    <section id="contact" class="py-20 px-6 bg-backgroundSoft text-primary" data-aos="zoom-in-up">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-10">Contact Us</h2>
             <form action="https://formspree.io/f/mvgbvwjp" method="POST"
@@ -317,7 +421,8 @@
                         class="w-full border border-gray-300 rounded-lgcustom px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
                 </div>
                 <button type="submit"
-                    class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white w-full">
+                    class="bg-accent text-contentBg rounded-roundfullcustom px-10 py-3 font-semibold hover:bg-primary transition shadow-card hover:text-white w-full"
+                    data-aos="fade-down-left">
                     Send Message
                 </button>
             </form>
@@ -326,18 +431,64 @@
 
     <!-- Call to Action Section -->
 
-    <section class="bg-primary py-20 px-6 text-center text-contentBg">
-        <div class="max-w-7xl mx-auto animate-fade-slide-up"></div>
-        <h2 class="text-3xl font-extrabold mb-6">Ready to Grow Your Business?</h2>
-        <p class="text-accent max-w-3xl mx-auto mb-12 font-light text-lg">
-            Contact us today for a complimentary strategy session and start seeing
-            real results.
-        </p>
-        <button id="openModal"
-            class="border-2 border-contentBg rounded-roundfullcustom px-16 py-5 font-semibold text-lg hover:bg-contentBg hover:text-primary transition transform hover:scale-105">
-            Schedule a Call
-        </button>
+
+    <section class="bg-primary py-20 px-6 text-center text-contentBg relative group overflow-hidden">
+        <div id="SchedulecCall"
+            class="flex flex-col items-center space-y-6 w-full max-h-[400px] overflow-hidden group-hover:overflow-y-scroll scroll-smooth">
+
+            <h2 class="text-3xl font-extrabold mb-6">Ready to Grow Your Business?</h2>
+            <p class="text-accent max-w-3xl mx-auto mb-12 font-light text-lg">
+                Contact us today for a complimentary strategy session and start seeing real results.
+            </p>
+            <button id="openModal"
+                class="border-2 border-contentBg rounded-roundfullcustom px-16 py-5 font-semibold text-lg hover:bg-contentBg hover:text-primary transition transform hover:scale-105"
+                style="overflow: visible;" data-aos="fade-up">
+                Schedule a Call
+            </button>
+
     </section>
+
+
+    <footer class="bg-contentBg text-textPrimary font-serif py-16 px-6 border-t border-backgroundSoft">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-primary font-extrabold text-2xl mb-4" style="font-family: serif;">Ritesh Singh</h3>
+                <p class="text-textSecondary text-base leading-relaxed" style="font-family: serif;">
+                    A premium digital marketing agency dedicated to elevating brands through strategy, creativity, and
+                    performance.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-primary font-semibold text-xl mb-4" style="font-family: serif;">Quick Links</h4>
+                <ul class="space-y-3 text-textSecondary" style="font-family: serif;">
+                    <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="#pricing-som" class="hover:text-accent transition">Pricing</a></li>
+                    <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Details -->
+            <div>
+                <h4 class="text-primary font-semibold text-xl mb-4" style="font-family: serif;">Contact</h4>
+                <ul class="space-y-3 text-textSecondary" style="font-family: serif;">
+                    <li><span class="font-semibold">Phone:</span> <a href="tel:+918887918349"
+                            class="hover:text-accent transition">+91 88879 18349</a></li>
+                    <li><span class="font-semibold">Email:</span> <a href="mailto:hello@riteshsingh.in"
+                            class="hover:text-accent transition">info@riteshsingh.in</a></li>
+                    <li><span class="font-semibold">Address:</span> Lucknow, Uttar Pradesh, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-backgroundSoft mt-10 pt-6 text-center text-textSecondary text-sm"
+            style="font-family: serif;">
+            © 2025 riteshsingh.in — All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+
 
     <!-- Modal Contact Form -->
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
@@ -361,6 +512,12 @@
             </form>
         </div>
     </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         const openModalBtn = document.getElementById('openModal');
@@ -390,6 +547,14 @@
 
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
+        });
+    </script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+            easing: 'ease-in-out',
+            offset: 100,
         });
     </script>
 </body>
