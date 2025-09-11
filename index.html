@@ -101,9 +101,14 @@
 
         <!-- Phone Number on right -->
         <div class="hidden md:block">
-            <a href="tel:+918887918349" class="text-primary font-semibold underline hover:text-accent transition">
-                +91 88879 18349
-            </a>
+            <div class="flex flex-col items-center">
+                <a href="tel:+918887918349" class="text-primary font-light underline hover:text-accent transition">
+                    +91 88879 18349
+                </a>
+                <a href="mailto:info@riteshsingh.in" class="text-primary font-light underline hover:text-accent transition">
+                    info@riteshsingh.in
+                </a>
+            </div>
         </div>
 
         <!-- Mobile menu button -->
@@ -128,7 +133,8 @@
                     Strategic campaigns tailored to grow your business and maximize ROI
                 </p>
                 <button
-                    class="bg-accent text-contentBg hover:bg-primary transition rounded-roundfullcustom px-16 py-5 font-semibold text-lg shadow-card hover:text-white" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+                    class="bg-accent text-contentBg hover:bg-primary transition rounded-roundfullcustom px-16 py-5 font-semibold text-lg shadow-card hover:text-white"
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
                     Get a Free Consultation
                 </button>
             </div>
@@ -432,9 +438,10 @@
     <!-- Call to Action Section -->
 
 
-    <section class="bg-primary py-20 px-6 text-center text-contentBg relative group overflow-hidden">
+    <section
+        class="bg-primary py-20 px-6 text-center text-contentBg relative group overflow-hidden hover:overflow-hidden">
         <div id="SchedulecCall"
-            class="flex flex-col items-center space-y-6 w-full max-h-[400px] overflow-hidden group-hover:overflow-y-scroll scroll-smooth">
+            class="flex flex-col items-center space-y-6 w-full max-h-[400px] overflow-hidden hover:overflow-hidden group-hover:overflow-y-scroll scroll-smooth">
 
             <h2 class="text-3xl font-extrabold mb-6">Ready to Grow Your Business?</h2>
             <p class="text-accent max-w-3xl mx-auto mb-12 font-light text-lg">
@@ -463,7 +470,7 @@
             <div>
                 <h4 class="text-primary font-semibold text-xl mb-4" style="font-family: serif;">Quick Links</h4>
                 <ul class="space-y-3 text-textSecondary" style="font-family: serif;">
-                    
+
                     <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
                     <li><a href="#services" class="hover:text-accent transition">Services</a></li>
                     <li><a href="#pricing-som" class="hover:text-accent transition">Pricing</a></li>
